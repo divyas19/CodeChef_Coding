@@ -82,3 +82,46 @@ class Codechef
       }
   }
 }
+
+
+
+
+
+_____________________________________________________________________________________________________________________________________________________________
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		while(t-- > 0) {
+		    int a = sc.nextInt();
+		    int b = sc.nextInt();
+		    int c = sc.nextInt();
+		    
+		    int x = b-Math.min(b,c);
+		    int y = c-Math.min(b,c);
+		    
+		    if(x>y) {
+		        a=a-x;
+		        if(a>0)
+		            System.out.println("YES");
+		        else
+		            System.out.println("NO");
+		    }
+		    else {
+		        a = a-y;
+		        if(a>0)
+		            System.out.println("YES");
+		        else
+		            System.out.println("NO");
+		    }
+		}
+	}
+}
